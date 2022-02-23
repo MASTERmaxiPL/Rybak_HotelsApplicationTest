@@ -2,6 +2,7 @@ package com.example.rybak_kl2tc_sprawdzian.remote.rest.api.dto.response;
 
 import com.example.rybak_kl2tc_sprawdzian.domain.model.ReservationStatusType;
 import com.example.rybak_kl2tc_sprawdzian.remote.rest.api.dto.request.PersonDto;
+import com.example.rybak_kl2tc_sprawdzian.remote.rest.api.dto.request.ReservatedRoomsDto;
 import com.example.rybak_kl2tc_sprawdzian.remote.rest.api.dto.request.RoomsReservationDto;
 
 import java.util.List;
@@ -9,13 +10,13 @@ import java.util.List;
 public class ReservationsDto {
     private int id;
     private ReservationStatusType status;
-    private List<RoomsReservationDto> listOfRooms;
+    private List<ReservatedRoomsDto> listOfRooms;
     private PersonDto person;
 
     public ReservationsDto() {
     }
 
-    public ReservationsDto(int id, ReservationStatusType status, List<RoomsReservationDto> listOfRooms, PersonDto person) {
+    public ReservationsDto(int id, ReservationStatusType status, List<ReservatedRoomsDto> listOfRooms, PersonDto person) {
         this.id = id;
         this.status = status;
         this.listOfRooms = listOfRooms;
@@ -38,11 +39,11 @@ public class ReservationsDto {
         this.status = status;
     }
 
-    public List<RoomsReservationDto> getListOfRooms() {
+    public List<ReservatedRoomsDto> getListOfRooms() {
         return listOfRooms;
     }
 
-    public void setListOfRooms(List<RoomsReservationDto> listOfRooms) {
+    public void setListOfRooms(List<ReservatedRoomsDto> listOfRooms) {
         this.listOfRooms = listOfRooms;
     }
 

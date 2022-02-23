@@ -6,13 +6,13 @@ import java.util.List;
 
 public class RoomsReservationDto {
     private int id;
-    private List<RoomsDto> listOfRooms;
+    private List<ReservatedRoomsDto> listOfRooms;
     private PersonDto person;
 
     public RoomsReservationDto() {
     }
 
-    public RoomsReservationDto(int id, List<RoomsDto> listOfRooms, PersonDto person) {
+    public RoomsReservationDto(int id, List<ReservatedRoomsDto> listOfRooms, PersonDto person) {
         this.id = id;
         this.listOfRooms = listOfRooms;
         this.person = person;
@@ -26,11 +26,11 @@ public class RoomsReservationDto {
         this.id = id;
     }
 
-    public List<RoomsDto> getListOfRooms() {
+    public List<ReservatedRoomsDto> getListOfRooms() {
         return listOfRooms;
     }
 
-    public void setListOfRooms(List<RoomsDto> listOfRooms) {
+    public void setListOfRooms(List<ReservatedRoomsDto> listOfRooms) {
         this.listOfRooms = listOfRooms;
     }
 
